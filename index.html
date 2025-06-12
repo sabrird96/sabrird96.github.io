@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="./css/style.css"> <!-- Enlace a la hoja de estilos -->
   <title>Document</title>
 </head>
- <body> <!-- Cuerpo -->
+
+<body> <!-- Cuerpo -->
   <header> <!-- Encabezado -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -23,32 +24,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre mi</a>
+              <a class="nav-link" href="./pages/sobre-mi.html">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CV</a>
+              <a class="nav-link" href="./pages/cv.html">CV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <h1 class="titulo"> <!-- Título principal -->
+  <main>
+    <h1 class="titulo"> <!-- Título principal -->
     <span class="light">Hola, soy Sabrina. </span> <br>
     <span class="bold">Diseñadora ux/ui, </span> <br>
     <span class="bold">desarrolladora web y cantante</span>
   </h1>
   <p class="intro-p">Diseño experiencias digitales que conectan con las personas <br>
-    y hacen su día a día más simple.</p>
-  <main> <!-- Contenido principal -->
+    y hacen su día a día más simple.</p> <!-- Contenido principal -->
     <section class="sobre-mi">
       <h2>Sobre mi</h2>
       <p>Soy diseñadora UX/UI y me encanta crear experiencias digitales que sean accesibles, intuitivas y, sobre todo,
@@ -58,36 +59,47 @@
         mí, el diseño es una forma de hacer la vida un poco más simple (y feliz) para las personas. Cada proyecto es una
         nueva chance de aprender y darle vida a algo genial. 😊</p>
     </section>
-    <section class="proyectos">
+    <article class="proyectos-titulo">
       <h2>Proyectos</h2>
+    </article>
+    <section class="proyectos">
       <div class="grid-item proyecto-1">
-        <img src="" alt="">
-        <h3>Rediseño de la web de RousBeauty</h3>
-        <p>Rediseño de la web de RousBeauty, una tienda de productos de belleza. El objetivo era mejorar la experiencia
-          del usuario y aumentar las conversiones.</p>
-        <a href="" target="_blank">Ver proyecto</a>
+        <img src="./img/Caratula rousbeauty.png" alt="caratula del proyecto RousBeauty">
+        <article>
+          <h3>Rediseño de la web de RousBeauty</h3>
+          <p>Rediseño de la web de RousBeauty, una tienda de productos de belleza. El objetivo era mejorar la
+            experiencia
+            del usuario y aumentar las conversiones.</p>
+          <a href="" target="_blank">Ver proyecto</a>
+          </article>
       </div>
       <div class="grid-item proyecto-2">
         <img src="./img/caratula sadaic.jpg" alt="">
-        <h3>Caso de estudio SADAIC</h3>
-        <p>Propusimos modernizar y optimizar el sitio de SADAIC para facilitar la información y servicios para los
-          compositores y autores musicales en Argentina.</p>
-        <a href="https://www.behance.net/gallery/209670965/Rediseno-SADAIC" target="_blank">Ver proyecto</a>
+        <article>
+          <h3>Caso de estudio SADAIC</h3>
+          <p>Propusimos modernizar y optimizar el sitio de SADAIC para facilitar la información y servicios para los
+            compositores y autores musicales en Argentina.</p>
+          <a href="https://www.behance.net/gallery/209670965/Rediseno-SADAIC" target="_blank">Ver proyecto</a>
+        </article>
       </div>
       <div class="grid-item proyecto-3">
         <img src="./img/Caratura crunchyroll.jpg" alt="">
-        <h3>Caso de estudio Crunchyroll</h3>
-        <p>Al rediseñar la app de Crunchyroll buscamos hacer que navegar y descubrir contenido sea tan emocionante como
-          el anime mismo.</p>
-        <a href="https://www.behance.net/gallery/189005839/Rediseno-Cruncryroll" target="_blank">Ver proyecto</a>
+        <article>
+          <h3>Caso de estudio Crunchyroll</h3>
+          <p>Al rediseñar la app de Crunchyroll buscamos hacer que navegar y descubrir contenido sea tan emocionante
+            como
+            el anime mismo.</p>
+          <a href="https://www.behance.net/gallery/189005839/Rediseno-Cruncryroll" target="_blank">Ver proyecto</a>
+        </article>
       </div>
       <div class="grid-item proyecto-4">
         <img src="./img/Caratula mapp.jpg" alt="">
-        <h3>Caso de estudio Mapp</h3>
-        <p>Mapp es una aplicación móvil que diseñé como “billetera virtual” para la tarjeta de transporte en Argentina
-          llamada SUBE.</p>
-        <a href="https://www.behance.net/gallery/174738225/Caso-de-Estudio-Diseno-UXUI-Mapp" target="_blank">Ver
-          proyecto</a>
+        <article>
+          <h3>Caso de estudio Mapp</h3>
+          <p>Mapp es una aplicación móvil que diseñé como “billetera virtual” para la tarjeta de transporte en Argentina
+            llamada SUBE.</p>
+          <a href="https://www.behance.net/gallery/174738225/Caso-de-Estudio-Diseno-UXUI-Mapp" target="_blank">Ver proyecto</a>
+        </article>
       </div>
     </section>
   </main>
