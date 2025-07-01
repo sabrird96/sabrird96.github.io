@@ -4,3 +4,55 @@ main {
     flex: 1;
     margin-top: 100px;
 }
+
+/*---contacto page---*/
+
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+        a{
+            text-decoration: none;
+            background-color: #8B1912;
+            color: #EBE3D8;
+            font-family: poppins, sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            margin-top: 30px;
+            width: 20%;
+            &:hover{
+                background-color: #BB868C;
+                color: #8B1912;
+                transition: 0.4s;
+            }
+        }
+}
+
+.btn-circular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #8B1912;
+    border: none;
+    cursor: pointer;
+    margin: 60px auto;
+    text-decoration: none;
+        .flecha{
+            font-size: 24px;
+            color: white;
+            line-height: 1;
+        }
+}

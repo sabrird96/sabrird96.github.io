@@ -6,3 +6,20 @@ header {
     font-weight: 500;
     display: flex;
 }
+
+.navbar {
+    position: fixed;
+    background-color: #EBE3D8;
+    width: 100%;
+    top: 0;
+    li{
+        text-decoration: none;
+        color: #8B1912;
+        font-size: 18px;
+        margin: 20px 30px;
+    &:hover{
+        color: #BB868C;
+        transition: 0.4s;
+    }
+    }
+}
