@@ -3,7 +3,6 @@
 @import "./components/header";
 @import "./components/main";
 @import "./components/footer";
-@import "./base/queries";
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -11,8 +10,6 @@
 /*!---main index---*/
 
 .hero {
-        background: url(../img/hero.svg) no-repeat center center;
-        background-size: cover;
         width: 100%;
         height: 630px;
         margin-top: 5px;
@@ -54,6 +51,41 @@
                         transition: 0.4s;
                 }
         }
+        img{
+                width: 370px;
+                height: auto;
+                position:absolute;
+                right: 160px;
+                bottom: 70px;
+        }
+        .nota-musical {
+                width: 80px;
+                height: auto;
+                position: absolute;
+                right: 130px;
+                bottom: 470px;
+        }
+        .cabeza-gatito{
+                width: 105px;
+                height: auto;
+                position: absolute;
+                right: 500px;
+                bottom: 50px;
+        }
+        .cuerpo-gatito{
+                width: 220px;
+                height: auto;
+                position: absolute;
+                right: 481px;
+                bottom: 8px;
+        }
+        .cola-gatito{
+                width: 60px;
+                height: auto;
+                position: absolute;
+                right: 690px;
+                bottom: 125px;
+        }
 }
 
 .sobre-mi {
@@ -67,6 +99,7 @@
                 color: #8B1912;
                 text-decoration: underline;
                 margin-top: 10%;
+        }
                 p {
                         font-family: 'Poppins', sans-serif;
                         font-size: 18px;
@@ -78,9 +111,20 @@
                                 font-weight: 700;
                         }
                 }
-        }
 }
 
+.proyectos-titulo{
+        h2{
+                text-align: center;
+                font-family: 'Merriweather', serif;
+                text-decoration: underline;
+                text-align: center;
+                color: #8B1912;
+                margin-top: 50px;
+                font-size: 28px;
+                padding: 20px;
+        }
+}
 
 .proyectos {
         font-family: poppins, sans-serif;
@@ -220,11 +264,202 @@
 }
 
 .definicion-titulo {
+        h3{
         text-align: center;
         font-family: 'Merriweather', serif;
         font-size: 28px;
         font-weight: 700;
         color: #8B1912;
         margin-top: 15%;
+        }
 }
 
+.definicion-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        img{
+                width: 130px;
+                height: 130px;
+                margin-right: 10px;
+        }
+                div{
+                        h4{
+                                font-family: 'Merriweather', serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                color: #8B1912;
+                                text-align: center;
+                                margin: 10px;
+                        }
+                        p{
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 18px;
+                                margin-top: 10px;
+                                width: 90%;
+                                text-align: center;
+                                margin: 10px;
+                        }
+                        
+                }
+}
+
+.personal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10% 0 30px 0;
+        h3{
+                font-family: 'Merriweather', serif;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+                color: #8B1912;
+        }
+        p{
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                font-size: 18px;
+                margin-top: 30px;
+                max-width: 60%;
+        }
+}
+
+.contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 10%;
+        p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                margin-top: 30px;
+        }
+        a{
+                text-decoration: none;
+                background-color: #8B1912;
+                color: #EBE3D8;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                padding: 10px;
+                text-align: center;
+                border: none;
+                border-radius: 10px;
+                margin-top: 30px;
+                &:hover{
+                        background-color: #BB868C;
+                        color: #8B1912;
+                        transition: 0.4s;
+                }
+        }
+}
+
+/*---CV page---*/
+
+.cv-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        p{
+                font-family: poppins, sans-serif;
+                font-weight: 500;
+                color: #EBE3D8;
+                text-align: center;
+                font-size: 18px;
+                width: 60%;
+        }
+}
+
+.formacion{
+        h2{
+                font-family: 'Merriweather', serif;
+                font-size: 28px;
+                font-weight: 700;
+                color: #8B1912;
+        }
+        ul{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                margin-top: 20px;
+        
+        }
+}
+
+.soft-skills{
+        h2{
+                font-family: 'Merriweather', serif;
+                font-size: 28px;
+                font-weight: 700;
+                color: #8B1912;
+        }
+        ul{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                margin-top: 20px;
+        
+        }
+}
+
+.hard-skills{
+        h2{
+                font-family: 'Merriweather', serif;
+                font-size: 28px;
+                font-weight: 700;
+                color: #8B1912;
+        }
+        ul{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                margin-top: 20px;
+        }
+}
+
+.idiomas{
+        h2{
+                font-family: 'Merriweather', serif;
+                font-size: 28px;
+                font-weight: 700;
+                color: #8B1912;
+        }
+        ul{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                margin-top: 20px;
+        }
+}
+
+.experiencia{
+        h2{
+                font-family: 'Merriweather', serif;
+                font-size: 28px;
+                font-weight: 700;
+                color: #8B1912;
+        }
+        article{
+                h3{
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-top: 20px;
+                }
+                p{
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-top: 10px;
+                }
+                ul{
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 16px;
+                        margin-top: 10px;
+                }
+                }
+}
+
+@import "./base/queries";

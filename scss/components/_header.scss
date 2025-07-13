@@ -12,7 +12,7 @@ header {
     background-color: #EBE3D8;
     width: 100%;
     top: 0;
-    li{
+    a{
         text-decoration: none;
         color: #8B1912;
         font-size: 18px;
@@ -21,5 +21,9 @@ header {
         color: #BB868C;
         transition: 0.4s;
     }
+    }
+    img{
+        width:0px;
+        height: auto;
     }
 }
