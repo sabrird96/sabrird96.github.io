@@ -131,8 +131,9 @@ header {
   transition: 0.4s;
 }
 .navbar img {
-  width: 0px;
+  width: 80px;
   height: auto;
+  object-fit: contain;
 }
 
 main {
