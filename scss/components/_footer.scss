@@ -3,7 +3,13 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
+    height: 180px;
+    .footer-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
     p{
         font-weight: 500;
         color: #8B1912;

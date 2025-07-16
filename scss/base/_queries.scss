@@ -2,22 +2,54 @@
 
 /*?---index media queries---*/
 
-@media screen and (max-width: 1257px) {
-    .hero {
-        background: url(../img/hero.svg) no-repeat center center;
-        background-size: content;
-        background-position: fixed;
-
+@media screen and (max-width: 1260px) {
+    .hero img {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        right: 100px;
+        bottom: 130px;
     }
+
+    .hero .nota-musical {
+        width: 60px;
+        height: auto;
+        position: absolute;
+        right: 80px;
+        bottom: 410px;
+    }
+
+    .hero .cabeza-gatito {
+        width: 95px;
+        height: auto;
+        position: absolute;
+        right: 350px;
+        bottom: 80px;
+    }
+
+    .hero .cuerpo-gatito {
+        width: 190px;
+        height: auto;
+        position: absolute;
+        right: 338px;
+        bottom: 48px;
+    }
+
+    .hero .cola-gatito {
+        width: 40px;
+        height: auto;
+        position: absolute;
+        right: 510px;
+        bottom: 160px;
+    }
+
+    .hero p{
+        width: 40%;
+    }
+
 }
 
-@media screen and (max-width: 1110px) {
-    .hero {
-        background: url(../img/hero.svg) no-repeat center center;
-        background-size: content;
-        background-position: fixed;
-        height: auto;
-    }
+@media screen and (max-width: 1180px) {
 
     .hero h1 {
         font-size: 44px;
@@ -26,8 +58,8 @@
     }
 
     .hero p {
-        font-size: 20px;
-        width: 50%;
+        font-size: 18px;
+        width: 40%;
     }
 
     .hero a {
@@ -52,13 +84,55 @@
     }
 }
 
-@media screen and (max-width: 813px) {
-    .hero {
-        background: url(../img/hero.svg) no-repeat center center;
-        background-size: content;
-        background-position: fixed;
+@media screen and (max-width: 1050px) {
+        .hero img {
+        width: 280px;
         height: auto;
+        position: absolute;
+        right: 100px;
+        bottom: 80px;
     }
+
+    .hero .nota-musical {
+        width: 60px;
+        height: auto;
+        position: absolute;
+        right: 80px;
+        bottom: 390px;
+    }
+
+    .hero .cabeza-gatito {
+        display: none;
+    }
+
+    .hero .cuerpo-gatito {
+        display: none;
+    }
+
+    .hero .cola-gatito {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 895px) {
+        .hero img {
+        width: 240px;
+        height: auto;
+        position: absolute;
+        right: 100px;
+        bottom: 170px;
+    }
+
+    .hero .nota-musical {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        right: 80px;
+        bottom: 420px;
+    }
+}
+
+@media screen and (max-width: 813px) {
 
     .navbar-brand img {
         width: 70px;
@@ -99,13 +173,46 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .hero {
-        background: url(../img/hero.svg) no-repeat center center;
-        background-size: content;
-        background-position: fixed;
+@media screen and (max-width: 765px) {
+    .hero img {
+        width: 210px;
         height: auto;
+        position: absolute;
+        right: 60px;
+        bottom: 200px;
     }
+
+    .hero .nota-musical {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 686px) {
+    .hero{
+        margin-top: 10%;
+        height: 500px;
+    }
+    .hero img {
+    display: none;
+    }
+    .hero h1 {
+        width: 80%;
+    }
+    .hero p {
+        width: 60%;
+    }
+    .footer{
+        height: 130px;
+    }
+    .footer p {
+    display: none;
+    }
+    .footer .footer-icons{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
 
     .hero h1 {
         font-size: 28px;
@@ -162,13 +269,12 @@
     }
 
     .footer p {
-        font-size: 14px;
+        display: none;
     }
 }
 
 @media screen and (max-width: 560px) {
     .hero {
-        background: none;
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -177,7 +283,7 @@
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 32px;
         margin: 0;
         width: 100%;
         text-align: center;
@@ -232,8 +338,11 @@
 }
 
 @media screen and (max-width: 430px) {
+    .hero{
+        height: 510px;;
+    }
     .hero h1 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .hero p {
@@ -433,7 +542,7 @@
 
 @media screen and (max-width: 865px) {
 
-    .bio{
+    .bio {
         margin-left: 5%;
     }
 
@@ -466,24 +575,24 @@
     }
 }
 
-@media screen and (max-width: 656px){
-    .bio{
+@media screen and (max-width: 656px) {
+    .bio {
         margin-left: 5%;
     }
 
-    .bio p{
+    .bio p {
         font-size: 16px;
     }
 
-    .personal{
+    .personal {
         height: 300px;
     }
 
-    .personal p{
+    .personal p {
         font-size: 16px;
     }
 
-    .contancto p{
+    .contancto p {
         font-size: 16px;
     }
 

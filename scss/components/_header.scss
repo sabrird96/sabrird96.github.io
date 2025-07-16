@@ -5,12 +5,15 @@ header {
     font-family: 'Merriweather', serif;
     font-weight: 500;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 .navbar {
     position: fixed;
-    background-color: #EBE3D8;
-    width: 100%;
+    background-color: #EBE3D8 !important;
+    flex-wrap: wrap;
     top: 0;
     a{
         text-decoration: none;
