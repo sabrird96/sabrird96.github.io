@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin: 40px 10%;
+  scroll-margin-top: 120px;
 }
 
 .definiciones-scroll {
@@ -35,6 +36,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #EBE3D8;
+  overflow-x: hidden;
 }
 
 main {
@@ -307,6 +309,19 @@ footer img {
   position: absolute;
   right: 690px;
   bottom: 125px;
+  animation: mover-cola 2s ease-in-out infinite;
+  transform-origin: bottom right;
+}
+@keyframes mover-cola {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }
 
 .sobre-mi {
@@ -639,6 +654,7 @@ footer img {
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
+  color: #AD352F;
 }
 .experiencia article p {
   font-family: "Poppins", sans-serif;
