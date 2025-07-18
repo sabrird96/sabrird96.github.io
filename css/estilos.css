@@ -145,38 +145,6 @@ main {
   margin-top: 100px;
 }
 
-/*---contacto page---*/
-.mb-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
-  font-family: poppins, sans-serif;
-  font-weight: 400;
-  width: 50%;
-  margin-top: 50px;
-  margin-left: 25%;
-}
-.mb-3 a {
-  text-decoration: none;
-  background-color: #8B1912;
-  color: #EBE3D8;
-  font-family: poppins, sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 10px;
-  text-align: center;
-  border: none;
-  border-radius: 10px;
-  margin-top: 30px;
-  width: 20%;
-}
-.mb-3 a:hover {
-  background-color: #BB868C;
-  color: #8B1912;
-  transition: 0.4s;
-}
-
 .btn-circular {
   display: flex;
   justify-content: center;
@@ -453,10 +421,20 @@ footer img {
 }
 
 /*---contacto page---*/
+.page-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .page-contacto h1 {
   font-family: "Merriweather", serif;
-  width: 100%;
   height: 100px;
+  width: 100%;
   font-size: 32px;
   font-weight: 700;
   text-decoration: underline;
@@ -465,10 +443,61 @@ footer img {
   margin-top: 6%;
 }
 .page-contacto h2 {
+  width: 100%;
   font-family: poppins, sans-serif;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 800px;
+}
+.form-wrapper .mb-3 {
+  align-items: flex-start;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 10%;
+}
+.form-wrapper .mb-3 label {
+  margin-top: 30px;
+  align-items: flex-start;
+}
+.form-wrapper .mb-3 input, .form-wrapper .mb-3 textarea {
+  text-align: left;
+  width: 80%;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #8B1912;
+}
+.form-wrapper .mb-3 a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #8B1912;
+  color: #EBE3D8;
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 60px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.form-wrapper .mb-3 a:hover {
+  background-color: #BB868C;
+  color: #8B1912;
+  transition: 0.4s;
 }
 
 /*!---sobre mi page---*/
@@ -803,10 +832,6 @@ footer img {
   .proyecto-titulo {
     font-size: 24px;
   }
-  .footer img {
-    width: 30px;
-    height: auto;
-  }
 }
 @media screen and (max-width: 765px) {
   .hero img {
@@ -887,9 +912,6 @@ footer img {
   .proyectos a {
     font-size: 16px;
     padding: 8px 12px;
-  }
-  .footer p {
-    display: none;
   }
 }
 @media screen and (max-width: 560px) {
@@ -1123,7 +1145,6 @@ footer img {
   }
   .definicion-item {
     flex: 0 0 auto;
-    /* no se achica ni se agranda */
     scroll-snap-align: center;
     width: 270px;
     height: auto;
@@ -1217,18 +1238,60 @@ footer img {
   }
 }
 /*---contacto page media queries---*/
+@media screen and (max-width: 1010px) {
+  .page-contacto h1 {
+    font-size: 28px;
+  }
+  .page-contacto h2 {
+    font-size: 20px;
+  }
+  .page-contacto p {
+    font-size: 16px;
+    width: 80%;
+  }
+}
 @media screen and (max-width: 860px) {
   .page-contacto h1 {
     font-size: 28px;
   }
   .page-contacto h2 {
     font-size: 20px;
-    margin-left: 5%;
   }
 }
 @media screen and (max-width: 762px) {
-  .mb-3 a {
-    padding: 10px 20px;
+  .page-contacto h1 {
+    margin-left: 30px;
+  }
+  .page-contacto h2 {
+    margin-left: 40px;
+  }
+  .form-wrapper .mb-3 a {
+    padding: 10px 130px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .page-contacto h1 {
+    margin-left: 22%;
+  }
+  .page-contacto h2 {
+    margin-left: 22%;
+  }
+}
+/*---footer media queries---*/
+@media screen and (max-width: 835px) {
+  footer img {
+    width: 40px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer .footer-icons {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 665px) {
+  footer p {
+    display: none;
   }
 }
 
