@@ -59,11 +59,11 @@
         }
 
         img {
-                width: 370px;
+                width: 340px;
                 height: auto;
                 position: absolute;
-                right: 160px;
-                bottom: 70px;
+                right: 100px;
+                bottom: 30px;
         }
 
         .nota-musical {
@@ -75,6 +75,7 @@
         }
 
         .cabeza-gatito {
+                display: none;
                 width: 105px;
                 height: auto;
                 position: absolute;
@@ -83,6 +84,7 @@
         }
 
         .cuerpo-gatito {
+                display: none;
                 width: 220px;
                 height: auto;
                 position: absolute;
@@ -91,6 +93,7 @@
         }
 
         .cola-gatito {
+                display: none;
                 width: 60px;
                 height: auto;
                 position: absolute;
@@ -126,7 +129,6 @@
                 font-size: 28px;
                 color: #8B1912;
                 text-decoration: underline;
-                margin-top: 10%;
         }
 
         p {
@@ -361,7 +363,6 @@
                 font-size: 18px;
                 font-weight: 600;
                 text-align: center;
-                margin-top: 30px;
                 width: 60%;
         }
 }
@@ -370,10 +371,10 @@
         h3 {
                 text-align: center;
                 font-family: 'Merriweather', serif;
-                font-size: 28px;
+                font-size: 24px;
                 font-weight: 700;
                 color: #8B1912;
-                margin-top: 15%;
+                margin-top: 10%;
         }
 }
 
@@ -382,32 +383,33 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 10px 0;
+        margin: 5px 0;
 
 
         img {
-                width: 130px;
-                height: 130px;
-                margin-right: 10px;
+                width: 80px;
+                height: 80px;
+                margin-right: 5px;
+                margin-bottom: 15px;
         }
 
         div {
                 h4 {
                         font-family: 'Merriweather', serif;
-                        font-size: 24px;
+                        font-size: 20px;
                         font-weight: 700;
                         color: #8B1912;
                         text-align: center;
-                        margin: 10px;
+                        margin: 0 0 0 5px;
                 }
 
                 p {
                         font-family: 'Poppins', sans-serif;
-                        font-size: 18px;
+                        font-size: 16px;
                         margin-top: 10px;
                         width: 90%;
                         text-align: center;
-                        margin: 10px;
+                        margin: 10px 0 0 20px;
                 }
 
         }
@@ -418,7 +420,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 10% 0 30px 0;
+        margin: 5% 0 10% 0;
 
         h3 {
                 font-family: 'Merriweather', serif;
@@ -477,7 +479,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 600px;
+        height: 650px;
+
 
         p {
                 font-family: poppins, sans-serif;
