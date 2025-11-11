@@ -709,6 +709,7 @@ footer img {
     bottom: 130px;
   }
   .hero .nota-musical {
+    display: none;
     width: 60px;
     height: auto;
     position: absolute;
@@ -774,7 +775,7 @@ footer img {
     height: auto;
     position: absolute;
     right: 100px;
-    bottom: 80px;
+    bottom: 20px;
   }
   .hero .nota-musical {
     width: 60px;
